@@ -16,6 +16,6 @@ public class Main {
 
         int total = price * quantity;
 
-        return total;
+        return total
     }
 }
