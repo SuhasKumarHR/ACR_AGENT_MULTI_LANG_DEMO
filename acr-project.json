@@ -1,5 +1,18 @@
 {
   "project": "java",
   "language": "java",
-  "path": "java"
+  "path": "java",
+  "projects": [
+    { "language": "python", "path": "python" },
+    { "language": "javascript", "path": "javascript" },
+    { "language": "typescript", "path": "typescript" },
+    { "language": "java", "path": "java" },
+    { "language": "c", "path": "c" },
+    { "language": "cpp", "path": "cpp" },
+    { "language": "csharp", "path": "csharp" },
+    { "language": "go", "path": "go" },
+    { "language": "rust", "path": "rust" },
+    { "language": "php", "path": "php" },
+    { "language": "kotlin", "path": "kotlin" }
+  ]
 }
