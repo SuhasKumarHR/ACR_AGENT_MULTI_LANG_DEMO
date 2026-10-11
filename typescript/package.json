@@ -1,0 +1,7 @@
+{
+  "name": "acr-agent-typescript-fixture",
+  "private": true,
+  "scripts": {
+    "build": "tsc --noEmit"
+  }
+}
