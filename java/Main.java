@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -6,20 +8,21 @@ public class Main {
         // ERROR 1 — SYNTAX ERROR
         // Missing semicolon
         // ============================================================
-        int number = 10
+        int number = 10;
 
 
         // ============================================================
         // ERROR 2 — TYPE ERROR
         // String assigned to an integer
         // ============================================================
-        int age = "twenty";
+        int age = 20;
 
 
         // ============================================================
         // ERROR 3 — UNDEFINED VARIABLE
         // 'username' has never been declared
         // ============================================================
+        String username = "ACR_USER";
         System.out.println(username);
 
 
@@ -28,7 +31,7 @@ public class Main {
         // Java String does not contain a method called makeUpper()
         // ============================================================
         String name = "ACR_AGENT";
-        System.out.println(name.makeUpper());
+        System.out.println(name.toUpperCase());
 
 
         // ============================================================
@@ -43,7 +46,7 @@ public class Main {
         // Array has indexes 0,1,2 but index 5 is accessed
         // ============================================================
         int[] numbers = {10, 20, 30};
-        System.out.println(numbers[5]);
+        System.out.println(numbers[2]);
 
 
         // ============================================================
@@ -59,7 +62,7 @@ public class Main {
         // Runtime error
         // ============================================================
         int x = 100;
-        int y = 0;
+        int y = 1;
         int division = x / y;
 
         System.out.println(division);
@@ -71,7 +74,7 @@ public class Main {
         // ============================================================
         int marks = 80;
 
-        if (marks < 40) {
+        if (marks >= 40) {
             System.out.println("Student Passed");
         } else {
             System.out.println("Student Failed");
@@ -82,7 +85,7 @@ public class Main {
         // ERROR 10 — NULL POINTER ERROR
         // Runtime NullPointerException
         // ============================================================
-        String message = null;
+        String message = "ACR_AGENT";
         System.out.println(message.length());
 
 
@@ -94,7 +97,7 @@ public class Main {
     // ERROR 5 SUPPORTING METHOD
     // Method returns String instead of int
     // ================================================================
-    public static String getNumber() {
-        return "100";
+    public static int getNumber() {
+        return 100;
     }
 }
