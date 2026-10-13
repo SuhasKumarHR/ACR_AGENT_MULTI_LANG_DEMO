@@ -6,7 +6,7 @@ print(age)
 print(squareroot(25))
 
 for i in range(3):
-print(i)
+    print(i)
 
 name = "Suhas"
 print(name + 10)
