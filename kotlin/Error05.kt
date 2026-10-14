@@ -1,0 +1,3 @@
+fun kotlinErrorFive() {
+    println(unknownKotlinFunction())
+}
