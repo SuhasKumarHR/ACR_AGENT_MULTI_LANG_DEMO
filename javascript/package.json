@@ -2,6 +2,6 @@
   "name": "acr-agent-javascript-fixture",
   "private": true,
   "scripts": {
-    "build": "node check-errors.js"
+    "build": "node --check index.js"
   }
 }

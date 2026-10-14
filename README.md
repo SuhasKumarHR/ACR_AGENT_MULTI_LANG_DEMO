@@ -2,7 +2,7 @@
 
 This repository is a deterministic test target for ACR_AGENT. It contains one
 small project directory for each supported language. Each directory contains
-**five independent build or syntax errors** so the worker can demonstrate
+**five independent build or syntax errors in that language's main entry file** so the worker can demonstrate
 failure detection, KNN classification, AI diagnosis, patching, verification,
 rollback, and retry behavior.
 
@@ -20,3 +20,9 @@ The errors are intentionally educational and should not be used as production
 source code. A successful healing run should leave the fixture repaired only in
 the worker's temporary clone and should publish a real branch/PR when GitHub
 credentials are configured.
+
+Each selected language now has one source entry file containing all five
+intentional failures (`main.*`, `index.*`, or `src/main.rs`/`src/index.ts`).
+This keeps a run focused on one file and makes the red/green GitHub diff easy
+to review. Select exactly one language in ACR_AGENT; the fixture is not meant
+to be run as one combined multi-language build.

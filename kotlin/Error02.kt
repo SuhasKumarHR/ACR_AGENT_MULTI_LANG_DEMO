@@ -1,3 +1,0 @@
-fun kotlinErrorTwo() {
-    println(missingKotlinSymbol)
-}

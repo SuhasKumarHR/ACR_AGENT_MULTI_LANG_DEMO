@@ -1,10 +1,9 @@
-mod error_01;
-mod error_02;
-mod error_03;
-mod error_04;
-mod error_05;
-
 fn main() {
-    let build_id: i32 = 1;
-    println!("{build_id}");
+    let type_error: i32 = "not an integer";    // 1: incompatible type
+    println!("{}", missing_rust_symbol);       // 2: unknown symbol
+    let another_type_error: String = 42;        // 3: incompatible type
+    missing_rust_function();                    // 4: unknown function
+    let value = 1;
+    println!("{}", value.missing_method());    // 5: unknown method
+    println!("{} {}", type_error, another_type_error);
 }
