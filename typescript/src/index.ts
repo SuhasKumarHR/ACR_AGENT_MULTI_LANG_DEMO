@@ -1,2 +1,2 @@
-const buildNumber: number = "not a number";
+const buildNumber: number = 1;
 console.log(buildNumber);

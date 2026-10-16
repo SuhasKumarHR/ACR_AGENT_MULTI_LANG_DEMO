@@ -1,7 +1,6 @@
 {
-  "project": "java",
-  "language": "java",
-  "path": "java",
+  "project": "multi-language-fixtures",
+  "language": "auto",
   "projects": [
     { "language": "python", "path": "python" },
     { "language": "javascript", "path": "javascript" },
